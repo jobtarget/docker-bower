@@ -34,7 +34,7 @@ A pre-built image is available on [Docker Hub](https://registry.hub.docker.com/u
    docker run -v "$MY_PROJECT:/home/bower/workspace" -t -i fstab/bower
    ```
 
-The container will spawn a `bash` shell that you can use to run [Bower](http://bower.io) commands (like `bower install --save` for adding new bower components), and it runs a HTTP server on port `8000` for viewing the project.
+The container will spawn a `bash` shell that you can use to run [Bower](http://bower.io) commands (like `bower install --save` for adding new bower components).
 
 Build from Source
 -----------------
