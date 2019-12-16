@@ -4,8 +4,7 @@ LABEL author="fabian@fstab.de, d.sipe@jobtarget.com"
 
 RUN apt-get update
 
-RUN apt-get -y install nodejs
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+RUN apt-get -y install nodejs git
 RUN apt-get -y install npm
 RUN npm -y install bower -g
 
