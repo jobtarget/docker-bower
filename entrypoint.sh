@@ -22,6 +22,5 @@ if [ $? -ne 0 ]; then
     echo "ERROR: bower install failed." >&2
     exit -1
 fi
-echo "Starting http server on http://`hostname -I | cut -d ' ' -f 1`:8000 using log file /tmp/simple-http-server.log"
-python -m SimpleHTTPServer > /tmp/simple-http-server.log 2>&1 &
+
 /bin/bash
