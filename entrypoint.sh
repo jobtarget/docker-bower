@@ -22,5 +22,3 @@ if [ $? -ne 0 ]; then
     echo "ERROR: bower install failed." >&2
     exit -1
 fi
-
-/bin/bash
