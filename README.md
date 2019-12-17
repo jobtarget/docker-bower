@@ -18,16 +18,18 @@ applications that still use Bower.
 Run from Docker Hub
 -------------------
 
-A pre-built image is available on [Docker Hub](https://registry.hub.docker.com/u/fstab/bower). It can be run as follows:
+A pre-built image is available on [Docker Hub](https://hub.docker.com/r/jobtarget/ci-bower). 
+It can be run as follows:
 
 1. Make sure you have your [Bower](http://bower.io)-based project in a directory like `/path/to/my-project`, and it contains the file `/path/to/my-project/bower.json`
 2. Run a docker container from that image, and map `/path/to/my-project` into that container (_replace `/path/to/my-project` with the path to your project_).
 
    ```bash
-   docker run -v "/path/to/my-project:/home/bower/workspace" -t -i jobtarget/ci-bower
+   docker run -v "/path/to/my-project:/home/bower/workspace" jobtarget/ci-bower
    ```
 
-The container will spawn a `bash` shell that you can use to run [Bower](http://bower.io) commands (like `bower install --save` for adding new bower components).
+This container will run `bower install` in non-interactive mode and exit.  
+That's it.
 
 Build from Source
 -----------------
